@@ -1,0 +1,43 @@
+<a class="btn btn-primary" href="#orders_add">添加订单</a>
+<table class="table">
+    <thead>
+    <th>
+        id
+    </th>
+    <th>
+        时间
+    </th>
+    <th>
+        产品
+    </th>
+    <th>
+        价格
+    </th>
+    <th>
+        地址
+    </th>
+    <th>
+        操作
+    </th>
+    </thead>
+    <tr ng-repeat="order in orders">
+        <td>
+            {{order.id}}
+        </td>
+        <td>
+            {{order.time}}
+        </td>
+        <td>
+            {{order.product}}
+        </td>
+        <td>
+            {{order.price}}
+        </td>
+        <td>
+            {{order.sendto}}
+        </td>
+        <td>
+            <button class="btn btn-primary" ng-click="removeOrder(order)">删除</button>
+        </td>
+    </tr>
+</table>

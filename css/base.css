@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 12px;
+    font-family: 'Î¢ÈíÑÅºÚ';
+}
+
+.sitenav {
+    width: 200px;
+    float: left;
+    height: 100%;
+    overflow: auto;
+    border-right: 1px solid #ccc;
+}
+
+.sitemain {
+    overflow: hidden;
+    height: 100%;
+    padding: 30px;
+}
+
+.nav a {
+    display: block;
+}

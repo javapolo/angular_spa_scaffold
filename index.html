@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+
+</head>
+<body ng-app="app">
+
+<div class="sitenav" style="position: relative">
+    <div style="height: 50px">
+        logo 区域
+    </div>
+    <div style="position: absolute;top: 50px;bottom: 0px;width: 100%;">
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" ng-class="{ active: isActive('/users')}"><a href="#users">用户列表</a></li>
+            <li role="presentation" ng-class="{ active: isActive('/orders')}"><a href="#orders">订单列表</a></li>
+        </ul>
+    </div>
+</div>
+<div class="sitemain">
+    <div ng-view>
+
+    </div>
+</div>
+</body>
+</html>
